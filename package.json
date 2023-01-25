@@ -1,0 +1,22 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Mi portafolio ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Victor-0rtiz/Portafolio.git"
+  },
+  "keywords": [
+    "Portafolio"
+  ],
+  "author": "Victor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Victor-0rtiz/Portafolio/issues"
+  },
+  "homepage": "https://github.com/Victor-0rtiz/Portafolio#readme"
+}
