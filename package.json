@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/Victor-0rtiz/Portafolio/issues"
   },
-  "homepage": "https://github.com/Victor-0rtiz/Portafolio#readme"
+  "homepage": "https://github.com/Victor-0rtiz/Portafolio#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.57.1"
+  }
 }
