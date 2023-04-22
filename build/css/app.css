@@ -532,6 +532,7 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .sobre-mi__contenido {
   padding: 2rem;
