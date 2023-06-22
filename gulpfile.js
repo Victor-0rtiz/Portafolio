@@ -10,19 +10,21 @@ const paths = {
 
 function css() {
     return src(paths.scss)
-        .pipe(sass()).pipe(plumber())
+    .pipe(sass())
+    .pipe(plumber())
         .pipe(dest('./build/css'));
 }
 function javaScript() {
     return src(paths.js)
         .pipe(dest('./build/js'));
 }
-function watchArchivos() {
+function watchArchivos(dn) {
     watch(paths.scss, css);
     watch(paths.js, javaScript);
+    dn();
 
 }
 
 
 exports.sass = sass;
-exports.dev = parallel(css, watchArchivos, javaScript); 
+exports.default = parallel(css, watchArchivos, javaScript); 

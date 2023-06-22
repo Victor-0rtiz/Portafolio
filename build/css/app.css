@@ -507,10 +507,19 @@ h4 {
 }
 .informacion__contenido--botones {
   padding: 2rem;
+  gap: 3rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .informacion__contenido--botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .informacion__contenido--botones a {
   background-color: #20C997;
@@ -571,8 +580,8 @@ h4 {
   text-align: center;
 }
 .sobre-mi__contenido--datos img {
-  width: 40rem;
-  height: 40rem;
+  width: 30rem;
+  height: 30rem;
 }
 
 .tecnologias {
@@ -595,8 +604,9 @@ h4 {
 }
 .tecnologias__contenido {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 3rem;
+  gap: 1rem;
 }
 @media (min-width: 768px) {
   .tecnologias__contenido {
@@ -605,11 +615,25 @@ h4 {
     gap: 3rem;
   }
 }
+@media (min-width: 1024px) {
+  .tecnologias__contenido {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3rem;
+  }
+}
 .tecnologias__informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
   text-align: center;
   color: #FFFFFF;
-  border: 1px solid #20C997;
-  border-radius: 0.5rem;
+}
+.tecnologias__informacion img {
+  width: 10rem;
+  height: 10rem;
 }
 
 .portafolio {
@@ -619,8 +643,8 @@ h4 {
   align-items: center;
 }
 .portafolio__contenedor {
-  background-color: #000000;
   width: 100%;
+  background-color: #000000;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -632,8 +656,7 @@ h4 {
   margin: 0 auto;
 }
 .portafolio__contenedor--contenido {
-  width: 90%;
-  padding: 4rem;
+  padding: 3.79rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 3rem;
@@ -661,8 +684,8 @@ h4 {
   margin: 1rem auto;
 }
 .proyecto__logo {
-  width: 20rem;
-  height: 20rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .formulario_contacto {
